@@ -21,3 +21,12 @@ Add numpad functionality on Mac OS X
 
 ### gbirke.zsh-theme
 My custom theme. Based on `jreese` but with different colors.
+
+### completions/\_phpunit
+PHPUnit command line completions from https://gist.github.com/tvlooy/4644554
+You might need to add the following lines to your zshrc:
+
+    # COMPLETION SETTINGS
+    # add custom completion scripts
+    fpath=(~/.oh-my-zsh/custom/completions $fpath) 
+
