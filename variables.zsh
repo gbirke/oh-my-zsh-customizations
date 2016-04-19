@@ -10,3 +10,6 @@ export WORKON_HOME=~/.envs
 # - don't initialize temcap to avoid clearing the screen (X)
 export LESS="-RFX"
 
+# Ignore "tests" directory when running "npm run test" or "composer test" scripts.
+# See http://zsh.sourceforge.net/Doc/Release/Parameters.html#index-CORRECT_005fIGNORE
+export CORRECT_IGNORE_FILE='test*'
