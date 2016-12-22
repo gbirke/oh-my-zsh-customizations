@@ -13,3 +13,9 @@ export LESS="-RFX"
 # Ignore "tests" directory when running "npm run test" or "composer test" scripts.
 # See http://zsh.sourceforge.net/Doc/Release/Parameters.html#index-CORRECT_005fIGNORE
 export CORRECT_IGNORE_FILE='test*'
+
+# Use vim as default editor if possible
+type_output_vim=`type "vim"`
+if [[ $? -eq 0 ]] ; then
+    export EDITOR="${type_output_vim##vim is }"
+fi
